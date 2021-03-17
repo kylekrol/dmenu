@@ -6,6 +6,10 @@ include config.mk
 SRC = drw.c dmenu.c stest.c util.c
 OBJ = $(SRC:.c=.o)
 
+DESTDIR=~/.local
+PREFIX=
+MANPREFIX=/share/man
+
 all: options dmenu stest
 
 options:
